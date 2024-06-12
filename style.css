@@ -1,0 +1,15 @@
+body {
+  width: 650px;
+  background-color: rgb(151, 148, 143);
+  color: white;
+  text-align: center;
+  padding-left: 450px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(15, 148, 104);
+}
