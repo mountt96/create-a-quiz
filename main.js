@@ -23,21 +23,21 @@ var feedbackOutput = document.getElementById("feedbackOutput");
 
 var markButton = document.getElementById("markButton");
 
-// Event listener
+// event listener
 markButton.addEventListener("click", mark);
 
 // Functions
 function mark() {
   var score = 0;
 
-  // Convert input values to lowercase
+  // Change input values to lowercase
   seatInput.value = seatInput.value.toLowerCase();
   signalInput.value = signalInput.value.toLowerCase();
   wheelInput.value = wheelInput.value.toLowerCase();
   doorInput.value = doorInput.value.toLowerCase();
   handbrakeInput.value = handbrakeInput.value.toLowerCase();
 
-  // Clear previous correction messages
+  // Clear old correction messages
   correctionSeat.innerHTML = "";
   correctionSignal.innerHTML = "";
   correctionWheel.innerHTML = "";
@@ -109,7 +109,7 @@ function mark() {
     handbrakeInput.style.borderColor = "red";
   }
 
-  // Display score and feedback
+  // Display output
   scoreOutput.innerHTML = `${score}/5`;
   percentageOutput.innerHTML = `(${Math.round((score / 5) * 100)}%)`;
 
